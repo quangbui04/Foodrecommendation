@@ -1,0 +1,27 @@
+.search-bar {
+    margin-bottom: 20px;
+  }
+  
+  #searchInput {
+    width: 300px;
+    padding: 10px;
+  }
+  
+  #restaurantList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #restaurantList li {
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #ddd;
+  }
+  
+  
+  .selected {
+    background-color: #ddd;
+  }
+  

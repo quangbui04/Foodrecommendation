@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Give me Food</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="search-bar">
+    <h3>Food</h3>
+    <form action="/recommendations" method="POST">
+      <div>
+        <p>Address:</p>
+        <input type="text" name="address-input">
+        <p>Radius:</p>
+        <input type="text" name="radius-input">
+      </div>
+      <div>
+        <label for="search-bar">Select favorite Restaurants</label>
+        <input type="text" id="searchInput" placeholder="Search restaurants">
+        <ul id="restaurantList">
+        </ul>
+        <ul id="selectedList">
+        </ul>
+      </div>
+      <button type="submit">Generate Recommendations</button>
+    </form>
+  </div>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>
